@@ -1,0 +1,105 @@
+body{
+    background-color: #c9f1f8;
+    font-family: century gothic;
+}
+.efpem{
+    float: left;
+ }
+.usac{
+     float: right;
+ }
+ul, li{
+    padding: 0;
+    margin: 10;
+    list-style: none;
+    object-fit: cover;
+}
+ul li{
+	display: inline-block;
+	margin:0px 5px;
+}
+ul li a {
+	display: block;
+	color: white;
+    font-weight: bold;
+	padding:10px 20px;
+	text-decoration: none;
+}
+ul li a:hover {
+	color: black;
+	background: #c9f1f8;
+}
+footer{
+    text-align: center;
+    margin: auto;
+    height: 60px;
+}
+.plan {
+    width:100%;
+	margin:auto;
+	overflow: hidden;
+}
+.a{
+    border:1px black solid;
+}
+.d{
+    border:1px black solid;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+.t{
+    text-align: center;
+    font-weight: bold;
+}
+.pa{
+    text-align: justify;
+    margin: 15px;
+}
+.b{
+    border:4px rgb(201, 198, 198) solid;
+    background-color: rgb(201, 198, 198);
+    display: flex;
+    align-items: center;
+}
+.c{
+    border:4px gray solid;
+    background-color: gray;
+    color: white;
+}
+
+.d1{
+    border:4px black solid;
+    background-color: black;
+    color: white;
+ }
+.d2{
+    border:4px goldenrod solid;
+    background-color: goldenrod;
+    color: white;
+ }
+.co{
+    margin: auto;
+    background-color: #c9f1f8;
+    width: 800px;
+    padding: 30px;
+}
+main{
+    margin: auto;
+    height: 400px;
+}
+section{
+    margin:auto;
+    float: left;
+    height: 200px;
+}
+article{
+    margin:auto;
+    width: 24%;
+    float: left;
+    height: 300px;
+}
+aside{
+    margin:auto;
+    height: 100px;
+}

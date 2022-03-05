@@ -1,0 +1,71 @@
+:root{
+    --ancho:1200px;
+}
+#contenedor{
+    text-align: center;
+    width: var(--ancho);
+    margin: auto;
+    display:grid;
+    grid-template-areas:
+        'a a a a a a'
+        'b1 b1 b2 b2 b3 b3'
+        'c c c c2 c2 c2'
+        'd1 d2 d3 d4 d5 d6'
+        'e e e e e e';
+    grid-template-rows: 250px 100px 500px 250px 100px;
+    border:1px black solid;
+}
+.a{
+    grid-area: a;
+    background-color: yellow;
+}
+.b1{
+    grid-area: b1;
+    background-color:yellowgreen;
+}
+.b2{
+    grid-area: b2;
+    background-color: skyblue;
+}
+.b3{
+    grid-area: b3;
+    background-color: blue;
+    color:white;
+}
+.c{
+    grid-area: c;
+    background-color: beige;
+}
+.c2{
+    grid-area: c2;
+    background-color: orange;
+}
+.d1{
+    grid-area: d1;
+    background-color: skyblue;
+}
+.d2{
+    grid-area: d2;
+    background-color: plum;
+}
+.d3{
+    grid-area: d3;
+    background-color: skyblue;
+}
+.d4{
+    grid-area: d4;
+    background-color: plum;
+}
+.d5{
+    grid-area: d5;
+    background-color: skyblue;
+}
+.d6{
+    grid-area: d6;
+    background-color: plum;
+}
+.e{
+    grid-area: e;
+    background-color: black;
+    color:white;
+}

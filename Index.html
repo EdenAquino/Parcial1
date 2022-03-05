@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/efpem.ico">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/estilo1.css">
+
+    <style>
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        @-webkit-keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+    </style>
+
+</head>
+<body> 
+    <header>
+		<div class="plan">
+			<div class="efpem">
+				<a href="https://www.efpemusac.org/"><img src="imgs/efpem.png" width="150"></a></div>
+			<div class="usac">
+				<a href="https://www.usac.edu.gt//"><img src="imgs/usac.png" width="200"></a> 
+			</div>
+		</div>
+	</header>
+
+    <header class="d">
+        <div class="plan">
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="Carreras.html">Carreras</a></li>
+                <li><a href="Estudiantes.html">Información</a></li>
+                <li><a href="Ubicacion.html">Ubicación</a></li>
+                <li class="usac"><a href="https://www.efpemusac.org/"><img src="imgs/Instagram.png" width="50"></a</li>
+                <li class="usac"><a href="https://www.facebook.com/EFPEMUSAC.oficial"><img src="imgs/face.png" width="50"></a></li>
+            </ul>
+        </div>
+     </header>   
+
+     <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <img src="imgs/1.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <img src="imgs/2.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="imgs/3.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="imgs/4.jpg" style="width:100%">
+          </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="imgs/5.jpg" style="width:100%">
+        </div>  
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="imgs/6.jpg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+    <aside>
+        <section class="a" style="width: 49%;">
+            <p class="t"> Misión</p>
+            <p class="pa">Somos una Escuela no facultativa de la Universidad de San Carlos de Guatemala, con excelencia académica en el funcionamiento de todos sus programas, responsable de la formación de profesionales de alta calidad, en el campo de la docencia, en los distintos niveles del sistema educativo nacional, ,y que, basados en la investigación, la docencia y la extensión, contribuimos al fortalecimiento del proceso educativo en el ámbito nacional, trabajando con ética, responsabilidad y compromiso con el desarrollo ambiental sostenible.</p>
+        </section>
+        <section class="a" style="width: 49%;">
+            <p class="t">Visión</p>
+            <p class="pa">Ser la unidad académica de Universidad de San Carlos de Guatemala que coadyuva a la formación del profesional docentes del sistema educativo nacional, con bases científica, tecnológica y humanística, que promuevan una cultura ambiental sostenible; que se fundamenten en las nuevas corrientes pedagógicas, capaces de cubrir las necesidades de la educación nacional en un contexto intercultural, cimentados en los valores éticos y morales de un profesional de la educación.  Contamos con un cuerpo docente altamente calificado y personal administrativo capacitado al servicio de nuestros usuarios.</p>
+        </section>
+    </aside>
+
+    <br><br><br><br><br><br>
+
+    <main>
+        <article class="b">
+            <h1><p class="t">Información para estudiantes</p></h1>
+        </article>
+        <article class="c">
+            <p class="t">PADEP</p>
+            <p class="pa">Programa de formación universitaria para el personal docente en
+                servicio, del sector oficial del Mineduc.</p>
+        </article>
+        <article class="d1">
+            <p class="t">Programa Galileo</p>
+            <p class="pa">Consiste en un concurso de ciencia en el ciclo básico, con cooperación
+                entre el Ministerio y el Comité Organizador de la Olimpíada de Ciencias.
+            </p>
+        </article>
+        <article class="d2">
+            <p class="t">Programa Académico Preparatorio</p>
+            <p class="pa">Conocido como PAP, su propósito es nivelar los conocimientos de las ciencias básicas, 
+                dirigido al estudiante de nivel medio que aspira ingresar a la Universidad.</p>
+        </article>
+    </main>
+
+    <aside>
+        <p style="text-align: right;">PBX: 24628700, Avenida Petapa 25-25, Ciudad Universitaria</p>
+    </aside>
+
+    <footer class="d">Id y Enseñad a Todos <br>
+    Escuela de Formación de Profesores de Enseñanaza Media - EFPEM
+    <br>2022
+</footer>
+
+</body>
+</html>

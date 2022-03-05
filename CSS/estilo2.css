@@ -1,0 +1,102 @@
+body{
+    background-color: #c9f1f8;
+    font-family: century gothic;
+}
+.efpem{
+    float: left;
+ }
+.usac{
+     float: right;
+ }
+ul, li{
+    padding: 0;
+    margin: 10;
+    list-style: none;
+    object-fit: cover;
+}
+ul li{
+	display: inline-block;
+	margin:0px 5px;
+}
+ul li a {
+	display: block;
+	color: white;
+    font-weight: bold;
+	padding:10px 20px;
+	text-decoration: none;
+}
+ul li a:hover {
+	color: black;
+	background: #c9f1f8;
+}
+footer{
+    text-align: center;
+    margin: auto;
+    height: 60px;
+}
+.plan {
+    width:100%;
+	margin:auto;
+	overflow: hidden;
+}
+.a{
+    border:1px black solid;
+}
+.d{
+    border:1px black solid;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+.t{
+    text-align: center;
+    font-weight: bold;
+}
+.pa{
+    text-align: justify;
+    margin: 15px;
+}
+#izq2{
+    width: 20%;
+    float: left;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+#izq{
+    width: 20%;
+    float: left;
+    color: balck;
+    display: flex;
+    align-items: center;
+}
+#der2{
+    width: 80%;
+    float: left;
+}
+#der{
+    width: 20%;
+    float: right;
+}
+.y{
+    margin: auto;
+    height: 200px;
+}
+.x{
+    margin: auto;
+    height: auto;
+}
+nav{
+    margin:auto;
+    height: 400px;
+}
+section{
+    width: 40%;
+    height: auto;
+    float: left;
+    margin: 10px;
+}
+article{
+    margin: auto;
+    height: 100px;
+}

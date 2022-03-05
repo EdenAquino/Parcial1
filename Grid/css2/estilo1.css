@@ -1,0 +1,63 @@
+:root{
+    --ancho:100%;
+}
+#contenedor{
+    text-align: center;
+    width: var(--ancho);
+    margin: auto;
+    display:grid;
+    grid-template-areas:
+        'a a a a'
+        'b1 b2 b3 b4'
+        'c c2 c2 c3'
+        'd d d d';
+    grid-template-rows: 350px 125px 500px 50px;
+    border:1px black solid;
+}
+.a{
+    grid-area: a;
+    background-color: yellow;
+}
+.efpem{
+    float: left;
+ }
+.usac{
+     float: right;
+ }
+ .plan {
+    width:100%;
+    margin:auto;
+    overflow: hidden;
+}
+.b1{
+    grid-area: b1;
+    background-color:orange;
+}
+.b2{
+    grid-area: b2;
+    background-color: gray;
+}
+.b3{
+    grid-area: b3;
+    background-color: orange;
+}
+.b4{
+    grid-area: b4;
+    background-color: gray;
+}
+.c{
+    grid-area: c;
+    background-color: green;
+}
+.c2{
+    grid-area: c2;
+}
+.c3{
+    grid-area: c3;
+    background-color: green;
+}
+.d{
+    grid-area: d;
+    background-color: black;
+    color: white;
+}

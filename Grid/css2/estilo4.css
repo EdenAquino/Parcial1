@@ -1,0 +1,64 @@
+:root{
+    --ancho:1200px;
+}
+#contenedor{
+    text-align: center;
+    width: var(--ancho);
+    margin: auto;
+    display:grid;
+    grid-template-areas:
+        'a a a a a a'
+        'b1 b1 b2 b2 b3 b3'
+        'c c c c2 c2 c2'
+        'd d d d d d2'
+        'e e e e e e'
+        'f f1 f1 f1 f1 f1';
+    grid-template-rows: 200px 250px 150px 300px 200px 300px;
+    border:1px black solid;
+}
+.a{
+    grid-area: a;
+    background-color: black;
+    color: white;
+}
+.b1{
+    grid-area: b1;
+    background-color:gold;
+}
+.b2{
+    grid-area: b2;
+    background-color: blue;
+}
+.b3{
+    grid-area: b3;
+    background-color: gold;
+}
+.c{
+    grid-area: c;
+    background-color: red;
+}
+.c2{
+    grid-area: c2;
+    background-color: aquamarine;
+}
+.d{
+    grid-area: d;
+    background-color: orange;
+}
+.d2{
+    grid-area: d2;
+    background-color: red;
+}
+.e{
+    grid-area: e;
+    background-color: black;
+    color: white;
+}
+.f{
+    grid-area: f;
+    background-color: red;
+}
+.f1{
+    grid-area: f1;
+    background-color: orange;
+}
